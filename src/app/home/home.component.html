@@ -1,0 +1,20 @@
+<ActionBar title="NativeScript" class="action-bar"> </ActionBar>
+
+<GridLayout>
+  <ScrollView class="page">
+    <StackLayout>
+      <CardView
+        *ngFor="let photo of photos"
+        class="card"
+        elevation="40"
+        radius="10"
+        ios:shadowRadius="3"
+      >
+        <StackLayout class="card-layout">
+          <Label class="h2">{{ photo.title | titlecase }}</Label>
+          <Image [src]="photo.thumbnailUrl"></Image>
+        </StackLayout>
+      </CardView>
+    </StackLayout>
+  </ScrollView>
+</GridLayout>

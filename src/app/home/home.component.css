@@ -1,0 +1,14 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 24px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+  margin-left: 16px;
+  border-radius: 8px;
+}
+.card img {
+  width: 100%;
+}
+.card .content {
+  padding: 20px;
+}
